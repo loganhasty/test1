@@ -6,7 +6,6 @@ $("#search").on("click", function(event) {
       $.ajax({
           url: queryURL,
           method: "GET",
-          headers: ('Access-Control-Allow-Origin', '*')
         })
         .done(function(response) {
           var results = response.data;
